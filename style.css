@@ -74,7 +74,7 @@
   }
   
   .hero {
-    background-image: url('assets/raccoonPressLogo.png');
+    background-image: url('assets/heroImage.png');
     background-size: cover;
     background-position: center;
     color: #000000;
