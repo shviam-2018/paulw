@@ -53,7 +53,7 @@
   }
   
   .nav-link:hover {
-    color: #339DFF;
+    color: #c2c2c2;
   }
   
   .nav-toggle {
@@ -73,12 +73,13 @@
     flex-direction: column;
   }
   
-  .hero {
-    background-image: url('assets/heroImage.png');
-    background-size: cover;
-    background-position: center;
-    color: #000000;
-    padding: 200px 0;
+  .heroImage{
+    max-width: fit-content;
+    width: 500px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
   }
   
   .hero-content {
@@ -89,11 +90,16 @@
   .hero-title {
     font-size: 3em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
   }
   
   .hero-title span {
+    display: grid;
+    place-items: center;
     color: #ed9a0a;
+    margin: 0 auto;
   }
   
   .social-links {
@@ -105,6 +111,9 @@
   
   .social-links li {
     display: inline-block;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
   }
   
   .icon {
@@ -115,20 +124,27 @@
   .hero-description {
     font-size: 1.5em;
     margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
   }
   
   .hero-button {
-    background-color: #339DFF;
+    background-color: #000000;
     padding: 15px 30px;
     color: white;
     text-decoration: none;
     border-radius: 50px;
+    display: grid;
+    max-width: 150px;
+    place-items: center;
+    margin: 10px auto;
   }
   
   .hero-button:hover {
     background-color: white;
-    color: #339DFF;
-    border: 2px solid #339DFF;
+    color: #000000;
+    border: 2px solid #000000;
   }
   
   .aboutme {
@@ -159,7 +175,7 @@
   }
   
   .homeab-btm {
-    background-color: #339DFF;
+    background-color: #000000;
     padding: 15px 30px;
     color: white;
     text-decoration: none;
@@ -168,8 +184,8 @@
   
   .homeab-btm:hover {
     background-color: white;
-    color: #339DFF;
-    border: 2px solid #339DFF;
+    color: #000000;
+    border: 2px solid #000000;
   }
   
   footer {
@@ -180,20 +196,94 @@
   }
   
   .footer-button {
-    background-color: #339DFF;
+    background-color: #000000;
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color: #ffff;
   }
   
   .footer-button:hover {
     background-color: white;
-    color: #339DFF;
+    color: #000000;
   }
   
   .footer-bottom {
     margin-top: 20px;
     font-size: 0.8em;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+  
+    .logo-brand {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .brand-name {
+      font-size: 1.2em;
+      margin-left: 0;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none; /* Hidden by default, shown when menu is toggled */
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .show {
+      display: flex; /* Shows the menu when toggled */
+    }
+  
+    .heroImage {
+      width: 100%; /* Adjust the image width */
+      max-width: 300px;
+      padding-top: 20px;
+    }
+  
+    .hero-title {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .hero-description {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  
+    .hero-button {
+      max-width: 120px;
+      padding: 10px 20px;
+    }
+  
+    .aboutme-info h1 {
+      font-size: 2em;
+    }
+  
+    .profile-picture {
+      width: 100px;
+    }
+  
+    .homeab-btm {
+      padding: 10px 20px;
+    }
+  
+    footer {
+      padding: 20px 0;
+    }
   }
   
