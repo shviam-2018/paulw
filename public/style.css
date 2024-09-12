@@ -1,14 +1,46 @@
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'JMHTypewriter', Arial, sans-serif;
     box-sizing: border-box;
   }
   
   .header {
-    background-color: #f8f8f8;
+    background-color: #03b9f6;
     padding: 20px 0;
     width: 100%;
+  }
+  
+  .web-icon {
+    border-radius: 20%;
   }
   
   .container {
@@ -53,7 +85,7 @@
   }
   
   .nav-link:hover {
-    color: #c2c2c2;
+    color: #d5f500;
   }
   
   .nav-toggle {
@@ -129,10 +161,15 @@
   }
   
   .hero-description {
+    font-family: 'JMHTypewriter', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  /*.hero-description {
     font-size: 1.5em;
     margin-bottom: 20px;
-    max-width: 600px; /* Control the width of the text for better readability */
-  }
+    max-width: 600px; 
+  }*/
   
   /*.hero-description {
     font-size: 1.5em;
@@ -143,7 +180,7 @@
   }*/
   
   .hero-button {
-    background-color: #000000;
+    background-color: #03b9f6;
     padding: 15px 30px;
     color: white;
     text-decoration: none;
@@ -156,8 +193,8 @@
   
   .hero-button:hover {
     background-color: white;
-    color: #000000;
-    border: 2px solid #000000;
+    color: #03b9f6;
+    border: 2px solid #03b9f6;
   }
   
   .aboutme {
@@ -188,7 +225,7 @@
   }
   
   .homeab-btm {
-    background-color: #000000;
+    background-color: #03b9f6;
     padding: 15px 30px;
     color: white;
     text-decoration: none;
@@ -197,8 +234,8 @@
   
   .homeab-btm:hover {
     background-color: white;
-    color: #000000;
-    border: 2px solid #000000;
+    color: #03b9f6;
+    border: 2px solid #03b9f6;
   }
   
   footer {
@@ -209,7 +246,7 @@
   }
   
   .footer-button {
-    background-color: #000000;
+    background-color: #03b9f6;
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
@@ -218,7 +255,7 @@
   
   .footer-button:hover {
     background-color: white;
-    color: #000000;
+    color: #03b9f6;
   }
   
   .footer-bottom {
