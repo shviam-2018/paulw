@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raccoon Press</title>
+  <link rel="icon" href="assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('show');
+    }
+  </script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo-brand" href="/">
+        <img src="assets/raccoonPressLogo.png" alt="NightDev Logo" class="logo">
+        <tt class="brand-name">Raccoon Press</tt>
+      </a>
+      <nav class="nav">
+        <div class="nav-links" id="nav-menu">
+          <a class="nav-link" href="/index.html">Home Page</a>
+          <a class="nav-link" href="/external links/about-me.html">About Me</a>
+          <a class="nav-link" href="/external links/contact.html">Contact Me</a> 
+          <a class="nav-link" href="/external links/projects.html">Projects</a>
+          <a class="nav-link" href="/external links/article.html">Articles</a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/heroImage.png" alt="hero image" class="heroImage">
+    <tt class="hero-title">Welcome to <span>RaccoonPress</span></tt>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.instagram.com/superfartypants/" target="_blank">
+          <img src="assets/icons/instagramIcon.png" alt="Instagram Icon" class="icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/people/Raccoon-Press-Paul-Wennersberg-L%C3%B8vholen/61551660068901/" target="_blank">
+          <img src="assets/icons/facebookIcon.png" alt="facebook Icon Icon" class="icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.goodreads.com/author/show/19615602.Paul_Wennersberg_L_vholen" target="_blank">
+          <img src="assets/icons/goodreader.png" alt="goodreader Icon" class="icon">
+        </a>
+      </li>
+    </ul>
+    <div class="hero-container">
+      <p class="hero-description">About Raccoon Press <br>
+        Raccoon Press (originally Paul's Books) was established in 2019,  with the publication of my first<br>
+        children's book- Super Farty Pants! which I initially wrote for my own children. <br>  
+        I read them a lot of books, and whilst the book market is flooded, I was struggling to find ones that <br>
+        were actually good- so I took it upon myself <br> to write my own. I hadn't planned on publishing it <br>
+        but was given a few gentle nudges from close friends <br> who had enjoyed it. That book has now sold over 10,000 copies <br>
+        worldwide. That was just the start of my journey and since then I have published several other titles, <br>
+        alongside helping other authors bring their creations to life. <br>
+    
+        RL Stine (author of Goosebumps) once said "Many adults feel that every children's book has to teach <br> 
+        them something.... My theory is a children's book... can be just for fun." <br>
+    
+        My mission is to create books that are not only engaging and fun to read, but with substance.
+        <br><br>
+        "We need to imagine new worlds, in order to create a better one"
+      </p>
+    </div>    
+    <br>
+    <a href="#aboutme" class="hero-button">About me</a>
+  </section>
+
+  <section class="aboutme" id="aboutme">
+    <div class="main">
+      <img src="assets/profilePhoto.png" alt="Photo of the owner of this website" class="profile-picture">
+      <div class="aboutme-info">
+        <h1>About Me</h1>
+        <h5>Founder of <span>RaccoonPress</span></h5>
+        <p>Paul Wennersberg-Løvholen is the creative force behind Paul's Books, where he weaves captivating tales for children that have garnered widespread acclaim. One of his standout works is the beloved children's book, "Super Farty Pants!," which has captured the hearts of young readers everywhere.</p>
+        <br>
+        <a href="external links/about-me.html" class="homeab-btm">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Get in touch with me</h3>
+      <p>Feel free to contact me if you have any questions or concerns. I am always available to help you.</p>
+      <br>
+      <a href="external links/contact.html" class="footer-button">Contact me</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; Raccoon Press | All Rights Reserved | Designed by Aaron Lacerda | Website Content and Domain &copy; 2024 Raccoon Press
+    </div>
+  </footer>
+</body>
+</html>

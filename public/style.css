@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  
+  .brand-name {
+    margin-left: 10px;
+    font-size: 1.5em;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .nav-link:hover {
+    color: #c2c2c2;
+  }
+  
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+  
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heroImage{
+    max-width: fit-content;
+    width: 500px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin-left: 50px;
+  }
+  
+  .hero-title {
+    font-size: 3em;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+  }
+  
+  .hero-title span {
+    display: grid;
+    place-items: center;
+    color: #ed9a0a;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .hero-description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    max-width: 600px; /* Control the width of the text for better readability */
+  }
+  
+  /*.hero-description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+  }*/
+  
+  .hero-button {
+    background-color: #000000;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    display: grid;
+    max-width: 150px;
+    place-items: center;
+    margin: 10px auto;
+  }
+  
+  .hero-button:hover {
+    background-color: white;
+    color: #000000;
+    border: 2px solid #000000;
+  }
+  
+  .aboutme {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .aboutme-info {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .aboutme-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .aboutme-info h5 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .homeab-btm {
+    background-color: #000000;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+  
+  .homeab-btm:hover {
+    background-color: white;
+    color: #000000;
+    border: 2px solid #000000;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .footer-button {
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .footer-button:hover {
+    background-color: white;
+    color: #000000;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+  
+    .logo-brand {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .brand-name {
+      font-size: 1.2em;
+      margin-left: 0;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none; /* Hidden by default, shown when menu is toggled */
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .show {
+      display: flex; /* Shows the menu when toggled */
+    }
+  
+    .heroImage {
+      width: 100%; /* Adjust the image width */
+      max-width: 300px;
+      padding-top: 20px;
+    }
+  
+    .hero-title {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .hero-description {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  
+    .hero-button {
+      max-width: 120px;
+      padding: 10px 20px;
+    }
+  
+    .aboutme-info h1 {
+      font-size: 2em;
+    }
+  
+    .profile-picture {
+      width: 100px;
+    }
+  
+    .homeab-btm {
+      padding: 10px 20px;
+    }
+  
+    footer {
+      padding: 20px 0;
+    }
+  }
+  
