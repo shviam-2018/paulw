@@ -137,11 +137,11 @@
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    text-align: center; /* Centers the list items */
+    text-align: center; 
   }
   
   .social-links li {
-    display: inline-block; /* Ensures that the list items are displayed inline */
+    display: inline-block; 
     margin: 0px 10px; 
   }
   

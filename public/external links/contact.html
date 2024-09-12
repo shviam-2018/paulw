@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raccoon Press</title>
-  <link rel="icon" href="assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="/public/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
   <script>
     function toggleMenu() {
         const menu = document.getElementById('nav-menu');
@@ -38,3 +37,40 @@
       </nav>
     </div>
   </header>
+  <body>
+    <div class="social-media-container">
+      <div class="social-links">
+        <div class="social-media-container">
+          <h1>Contact Us</h1>
+          <p>Feel free to reach out to us through any of the following methods:</p>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.instagram.com/superfartypants/" target="_blank">
+                <img src="/public/assets/icons/instagramIcon.png" alt="Instagram Icon" class="icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/people/Raccoon-Press-Paul-Wennersberg-L%C3%B8vholen/61551660068901/" target="_blank">
+                <img src="/public/assets/icons/facebookIcon.png" alt="facebook Icon Icon" class="icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.goodreads.com/author/show/19615602.Paul_Wennersberg_L_vholen" target="_blank">
+                <img src="/public/assets/icons/goodreader.png" alt="goodreader Icon" class="icon">
+              </a>
+            </li>
+          </ul>
+      </div>
+      </div>
+    </div>
+
+    <!--form-->
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="cf96b479-41e4-40c7-8985-01a9538b1b25">
+     Name: <input type="text" name="name" id="name" placeholder="your name" class="input" required>
+      Email: <input type="text" name="email" id="email" placeholder="your email" class="input" required>
+      Message: <textarea name="message" id="message" placeholder="your mesage" class="input" requiredf></textarea>
+      <button type="submit" class="submit-button">submit</button>
+    </form>
+  </body>
+</html>
