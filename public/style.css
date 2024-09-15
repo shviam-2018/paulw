@@ -29,8 +29,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'JMHTypewriter', Arial, sans-serif;
+    font-family: sans-serif, 'JMHTypewriter', Arial;
     box-sizing: border-box;
+  }
+  body{
+    background-color: #fffff4;
   }
   
   .header {
@@ -66,6 +69,7 @@
   .brand-name {
     margin-left: 10px;
     font-size: 1.5em;
+    font-family: 'JMHTypewriter';
   }
   
   .nav {
@@ -79,6 +83,7 @@
   }
   
   .nav-link {
+    font-family: 'JMHTypewriter';
     text-decoration: none;
     color: #333;
     font-size: 1em;
@@ -121,12 +126,14 @@
   
   .hero-title {
     font-size: 3em;
+    font-family: 'JMHTypewriter';
     display: grid;
     place-items: center;
     margin: 0 auto;
   }
   
   .hero-title span {
+    font-family: 'JMHTypewriter';
     display: grid;
     place-items: center;
     color: #ed9a0a;
@@ -160,9 +167,14 @@
   }
   
   .hero-description {
-    font-family: 'JMHTypewriter', sans-serif;
+    font-family:  sans-serif;
     font-size: 1.5em;
     text-align: center;
+  }
+
+  .hero-description p{
+    text-align: justify;
+    font-size: 2em; 
   }
   /*.hero-description {
     font-size: 1.5em;
@@ -188,6 +200,7 @@
     max-width: 150px;
     place-items: center;
     margin: 10px auto;
+    font-family: 'JMHTypewriter';
   }
   
   .hero-button:hover {
@@ -200,6 +213,8 @@
     padding: 100px 0;
     background-color: #f9f9f9;
     text-align: center;
+    background-color: #fffff4;
+    font-family: 'JMHTypewriter';
   }
   
   .profile-picture {
@@ -211,16 +226,28 @@
   .aboutme-info {
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'JMHTypewriter';
   }
   
   .aboutme-info h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: black;
+    font-family: 'JMHTypewriter';
   }
   
-  .aboutme-info h5 {
+  .aboutme-info span {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #ed9a0a;;
+    font-family: 'JMHTypewriter';
+  }
+
+  .aboutme-info h5{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'JMHTypewriter';
   }
   
   .homeab-btm {
@@ -229,6 +256,7 @@
     color: white;
     text-decoration: none;
     border-radius: 50px;
+    font-family: 'JMHTypewriter';
   }
   
   .homeab-btm:hover {
@@ -250,6 +278,7 @@
     border-radius: 50px;
     text-decoration: none;
     color: #ffff;
+    font-family: 'JMHTypewriter';
   }
   
   .footer-button:hover {

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/public/external links/CSS/contact.css">
+  <link rel="stylesheet" href="CSS/contact.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raccoon Press</title>
-  <link rel="icon" href="/public/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
+  <link rel="icon" href="/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
   <script>
     function toggleMenu() {
         const menu = document.getElementById('nav-menu');
         menu.classList.toggle('show');
     }
   </script>
-  <link rel="icon" href="/public/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
+  <link rel="icon" href="/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
 </head>
 <body>
   <header class="header">
@@ -25,7 +25,7 @@
         <div class="nav-links" id="nav-menu">
           <a class="nav-link" href="/public/index.html">Home Page</a>
           <a class="nav-link" href="/external links/about-me.html">About Me</a>
-          <a class="nav-link" href="/external links/contact.html">Contact Me</a> 
+          <a class="nav-link" href="contact.html">Contact Me</a> 
           <a class="nav-link" href="/external links/projects.html">Projects</a>
           <a class="nav-link" href="/external links/article.html">Articles</a>
         </div>
@@ -37,7 +37,10 @@
       </nav>
     </div>
   </header>
-  <body>
+
+    <br>
+    <br>
+    <br>
     <div class="social-media-container">
       <div class="social-links">
         <div class="social-media-container">
@@ -63,14 +66,20 @@
       </div>
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
     <!--form-->
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="cf96b479-41e4-40c7-8985-01a9538b1b25">
-     Name: <input type="text" name="name" id="name" placeholder="your name" class="input" required>
-      Email: <input type="text" name="email" id="email" placeholder="your email" class="input" required>
-      Message: <textarea name="message" id="message" placeholder="your mesage" class="input" requiredf></textarea>
-      <button type="submit" class="submit-button">submit</button>
-    </form>
+    <div class="form">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="cf96b479-41e4-40c7-8985-01a9538b1b25">
+        Name: <input type="text" name="name" id="name" placeholder="your name" class="input" required>
+        <br>
+        Email: <input type="text" name="email" id="email" placeholder="your email" class="input" required>
+        <br>
+        Message: <textarea name="message" id="message" placeholder="your mesage" class="input" requiredf></textarea>
+        <button type="submit" class="submit-button">submit</button>
+      </form>
+    </div>
   </body>
 </html>
