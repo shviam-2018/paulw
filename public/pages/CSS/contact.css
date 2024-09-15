@@ -1,37 +1,37 @@
 @font-face {
     font-family: 'JMHTypewriter';
-    src: url('/public/fonts/JMH Typewriter.ttf') format('truetype');
+    src: url(' /fonts/JMH Typewriter.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'JMHTypewriter';
-    src: url('/public/fonts/JMH Typewriter-Bold.ttf') format('truetype');
+    src: url(' /fonts/JMH Typewriter-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'JMHTypewriter';
-    src: url('/public/fonts/JMH Typewriter-Black.ttf') format('truetype');
+    src: url(' /fonts/JMH Typewriter-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'JMHTypewriter';
-    src: url('/public/fonts/JMH Typewriter-Thin.ttf') format('truetype');
+    src: url(' /fonts/JMH Typewriter-Thin.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
   }
   
   * {
-      margin: 0;
-      padding: 0;
-      font-family: 'JMHTypewriter', Arial, sans-serif;
-      box-sizing: border-box;
-    }
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'JMHTypewriter', Arial;
+    box-sizing: border-box;
+  }
     
     body {
       margin: 0;
@@ -46,11 +46,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("/public/assets/heroImage.png");
+      background-image: url("/assets/heroImage.png");
       background-size: cover;
       background-position: center;
-      opacity: 0.5; /* Only the background image will have reduced opacity */
-      z-index: -1; /* Ensures the background stays behind the content */
+      opacity: 0.5;
+      z-index: -1; 
     }    
 
     .header {
@@ -86,6 +86,7 @@
     .brand-name {
       margin-left: 10px;
       font-size: 1.5em;
+      font-family: 'JMHTypewriter';
     }
     
     .nav {
@@ -99,6 +100,7 @@
     }
     
     .nav-link {
+      font-family: 'JMHTypewriter';
       text-decoration: none;
       color: #333;
       font-size: 1em;

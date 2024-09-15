@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="CSS/books.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raccoon Press</title>
+  <link rel="icon" href="/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('show');
+    }
+  </script>
+  <link rel="icon" href="/assets/raccoonPressLogo.png" type="image/icon type" class="web-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo-brand" href="/">
+        <img src="/assets/raccoonPressLogo.png" alt="raccoonPressLogo Logo" class="logo">
+        <tt class="brand-name">Raccoon Press</tt>
+      </a>
+      <nav class="nav">
+        <div class="nav-links" id="nav-menu">
+          <a class="nav-link" href=" /index.html">Home Page</a>
+          <a class="nav-link" href="/external links/about-me.html">About Me</a>
+          <a class="nav-link" href="contact.html">Contact Me</a> 
+          <a class="nav-link" href="books.html">Books</a>
+          <a class="nav-link" href="/external links/article.html">Articles</a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+</body>
+</html>
