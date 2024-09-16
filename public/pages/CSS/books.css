@@ -106,3 +106,60 @@
     display: flex;
     flex-direction: column;
   }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .book-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .book-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .book-img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .book-details {
+    flex: 1;
+  }
+  
+  .book-details h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .book-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .buy-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .buy-links a:hover {
+    background-color: #005bb5;
+  }
+  
