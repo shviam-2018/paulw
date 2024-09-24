@@ -117,14 +117,14 @@
     flex-direction: column;
   }
   
-  .heroImage{
-    max-width: fit-content;
-    width: 500px;
-    display: grid;
-    place-items: center;
+  .heroImage {
+    max-width: 100%;
+    width: auto; /* Ensures the image scales with the screen */
+    display: block; /* Avoids inline block issues */
     margin: 0 auto;
+    height: auto;
     padding-top: 50px;
-  }
+}
   
   .hero-content {
     max-width: 800px;
@@ -293,22 +293,28 @@
     position: absolute;
     background-color: white;
     top: 60px;
-    right: 0; /* Aligns the menu to the right of the screen */
-    width: 200px; /* Adjust the width as needed */
+    right: 0;
+    width: 200px;
     text-align: right;
     padding: 10px;
-  }
+}
 
-  /* For the toggle button (hamburger menu) */
-  .nav-toggle {
+.nav-links.active {
+    display: flex; /* Show menu when 'active' */
+}
+
+.nav-toggle {
     display: flex;
     position: absolute;
     top: 20px;
-    right: 20px; /* Aligns the toggle button to the right */
-  }
+    right: 20px;
+    cursor: pointer;
+}
 
-  /* Show the menu when active */
-  .nav-links.active {
-    display: flex;
-  }
+.nav-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
 }
