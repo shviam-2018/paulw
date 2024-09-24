@@ -285,91 +285,30 @@
     font-size: 0.8em;
   }
   
-  @media only screen and (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 10px;
-    }
-  
-    .logo-brand {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .brand-name {
-      font-size: 1.2em;
-      margin-left: 0;
-    }
-  
-    .nav {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      background-color: white;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      text-align: right;
-      padding: 10px;
-    }
-  
-    .nav-toggle {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: 20px;
-      right: 20px;
-    }
-
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .show {
-      display: flex; /* Shows the menu when toggled */
-    }
-  
-    .heroImage {
-      width: 100%; /* Adjust the image width */
-      max-width: 300px;
-      padding-top: 20px;
-    }
-  
-    .hero-title {
-      font-size: 2em;
-      text-align: center;
-    }
-  
-    .hero-description {
-      font-size: 1.2em;
-      text-align: center;
-    }
-  
-    .hero-button {
-      max-width: 120px;
-      padding: 10px 20px;
-    }
-  
-    .aboutme-info h1 {
-      font-size: 2em;
-    }
-  
-    .profile-picture {
-      width: 100px;
-    }
-  
-    .homeab-btm {
-      padding: 10px 20px;
-    }
-  
-    footer {
-      padding: 20px 0;
-    }
+ /* Align the menu to the right on mobile */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    right: 0; /* Aligns the menu to the right of the screen */
+    width: 200px; /* Adjust the width as needed */
+    text-align: right;
+    padding: 10px;
   }
-  
+
+  /* For the toggle button (hamburger menu) */
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Aligns the toggle button to the right */
+  }
+
+  /* Show the menu when active */
+  .nav-links.active {
+    display: flex;
+  }
+}
