@@ -118,9 +118,9 @@
   }
   
   .heroImage {
-    max-width: 100%;
-    width: auto; /* Ensures the image scales with the screen */
-    display: block; /* Avoids inline block issues */
+    max-width: 50%;
+    width: auto; 
+    display: block; 
     margin: 0 auto;
     height: auto;
     padding-top: 50px;
