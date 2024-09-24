@@ -96,13 +96,20 @@
   .nav-toggle {
     display: none;
     cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
   }
   
   .nav-icon {
     width: 25px;
     height: 3px;
     background-color: #333;
-    margin: 4px 0;
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
   }
   
   .show {
@@ -176,19 +183,6 @@
     text-align: justify;
     font-size: 2em; 
   }
-  /*.hero-description {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    max-width: 600px; 
-  }*/
-  
-  /*.hero-description {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    display: grid;
-    place-items: center;
-    margin: 0 auto;
-  }*/
   
   .hero-button {
     background-color: #03b9f6;
@@ -313,14 +307,28 @@
       gap: 10px;
     }
   
-    .nav-toggle {
-      display: block;
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: white;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: right;
+      padding: 10px;
     }
   
-    .nav-links {
-      display: none; /* Hidden by default, shown when menu is toggled */
-      flex-direction: column;
-      gap: 10px;
+    .nav-toggle {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 20px;
+      right: 20px;
+    }
+
+    .nav-links.active {
+      display: flex;
     }
   
     .show {
