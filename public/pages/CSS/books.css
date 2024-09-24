@@ -91,15 +91,19 @@
   }
   
   .nav-toggle {
-    display: none;
+    display: none; /* Hide the hamburger by default */
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even spacing between lines */
+    width: 30px; /* Set a fixed width for the hamburger icon */
+    height: 20px; /* Set a fixed height to accommodate all three lines */
     cursor: pointer;
   }
   
   .nav-icon {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
+    width: 100%; /* Set width to 100% of the .nav-toggle */
+    height: 3px; /* Thickness of each hamburger line */
+    background-color: #333; /* Color of the hamburger lines */
+    border-radius: 2px; /* Optional: round the edges slightly */
   }
   
   .show {
@@ -128,38 +132,56 @@
     border-radius: 5px;
   }
   
+  .book-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
   .book-img {
-    width: 150px;
-    height: auto;
+    width: 150px; /* Adjust according to preference */
     margin-right: 20px;
   }
   
   .book-details {
-    flex: 1;
+    max-width: 600px;
   }
   
-  .book-details h2 {
-    font-size: 20px;
-    margin-top: 0;
-  }
+  @media (max-width: 768px) {
+    .book-item {
+      flex-direction: column;
+      align-items: center;
+    }
   
-  .book-details p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+    .book-img {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   
-  .buy-links a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px 10px;
-    background-color: #0073e6;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    font-size: 14px;
-  }
+    .book-details {
+      text-align: center;
+    }
+
+    .nav-links {
+      display: none; 
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   
-  .buy-links a:hover {
-    background-color: #005bb5;
+    .nav-toggle {
+      display: flex; /* Show hamburger icon on smaller screens */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show the links when the menu is active */
+    }
   }
   
