@@ -31,10 +31,25 @@ This project serves as a portfolio and informational website for Paul Wennersber
 
 ## Directory Structure
 
-root │ index.html # Main homepage file │ books.html # Books listing page │ about-me.html # About the author │ video.html # Video media page │ forAuthors.html # Services for authors │ contact.html # Contact form page │ README.md # Project README file │ ├───CSS │ │ style.css # Main CSS file │ │ about-me.css # Styles for About Me page │ └─── ... # Other page-specific stylesheets │ ├───assets │ └─── ... # Images, fonts, and media assets │ ├───scripts │ └─── script.js # JavaScript for the navbar and interactivity
-
-yaml
-Copy code
+root
+│   index.html               # Main homepage file
+│   books.html               # Books listing page
+│   about-me.html            # About the author
+│   video.html               # Video media page
+│   forAuthors.html          # Services for authors
+│   contact.html             # Contact form page
+│   README.md                # Project README file
+│
+├───CSS
+│   │   style.css            # Main CSS file
+│   │   about-me.css         # Styles for About Me page
+│   └─── ...                 # Other page-specific stylesheets
+│
+├───assets
+│   └─── ...                 # Images, fonts, and media assets
+│
+├───scripts
+│   └─── script.js           # JavaScript for the navbar and interactivity
 
 ---
 

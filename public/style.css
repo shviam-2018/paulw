@@ -29,8 +29,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'JMHTypewriter', Arial, sans-serif;
+    font-family: sans-serif, 'JMHTypewriter', Arial;
     box-sizing: border-box;
+  }
+  body{
+    background-color: #fffff4;
   }
   
   .header {
@@ -66,6 +69,7 @@
   .brand-name {
     margin-left: 10px;
     font-size: 1.5em;
+    font-family: 'JMHTypewriter';
   }
   
   .nav {
@@ -79,6 +83,7 @@
   }
   
   .nav-link {
+    font-family: 'JMHTypewriter';
     text-decoration: none;
     color: #333;
     font-size: 1em;
@@ -91,13 +96,20 @@
   .nav-toggle {
     display: none;
     cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
   }
   
   .nav-icon {
     width: 25px;
     height: 3px;
     background-color: #333;
-    margin: 4px 0;
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
   }
   
   .show {
@@ -105,14 +117,14 @@
     flex-direction: column;
   }
   
-  .heroImage{
-    max-width: fit-content;
-    width: 500px;
-    display: grid;
-    place-items: center;
+  .heroImage {
+    max-width: 50%;
+    width: auto; 
+    display: block; 
     margin: 0 auto;
+    height: auto;
     padding-top: 50px;
-  }
+}
   
   .hero-content {
     max-width: 800px;
@@ -121,12 +133,14 @@
   
   .hero-title {
     font-size: 3em;
+    font-family: 'JMHTypewriter';
     display: grid;
     place-items: center;
     margin: 0 auto;
   }
   
   .hero-title span {
+    font-family: 'JMHTypewriter';
     display: grid;
     place-items: center;
     color: #ed9a0a;
@@ -160,23 +174,15 @@
   }
   
   .hero-description {
-    font-family: 'JMHTypewriter', sans-serif;
+    font-family:  sans-serif;
     font-size: 1.5em;
     text-align: center;
   }
-  /*.hero-description {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    max-width: 600px; 
-  }*/
-  
-  /*.hero-description {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    display: grid;
-    place-items: center;
-    margin: 0 auto;
-  }*/
+
+  .hero-description p{
+    text-align: justify;
+    font-size: 2em; 
+  }
   
   .hero-button {
     background-color: #03b9f6;
@@ -188,6 +194,7 @@
     max-width: 150px;
     place-items: center;
     margin: 10px auto;
+    font-family: 'JMHTypewriter';
   }
   
   .hero-button:hover {
@@ -200,6 +207,8 @@
     padding: 100px 0;
     background-color: #f9f9f9;
     text-align: center;
+    background-color: #fffff4;
+    font-family: 'JMHTypewriter';
   }
   
   .profile-picture {
@@ -211,16 +220,28 @@
   .aboutme-info {
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'JMHTypewriter';
   }
   
   .aboutme-info h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: black;
+    font-family: 'JMHTypewriter';
   }
   
-  .aboutme-info h5 {
+  .aboutme-info span {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #ed9a0a;;
+    font-family: 'JMHTypewriter';
+  }
+
+  .aboutme-info h5{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'JMHTypewriter';
   }
   
   .homeab-btm {
@@ -229,6 +250,7 @@
     color: white;
     text-decoration: none;
     border-radius: 50px;
+    font-family: 'JMHTypewriter';
   }
   
   .homeab-btm:hover {
@@ -250,6 +272,7 @@
     border-radius: 50px;
     text-decoration: none;
     color: #ffff;
+    font-family: 'JMHTypewriter';
   }
   
   .footer-button:hover {
@@ -262,77 +285,36 @@
     font-size: 0.8em;
   }
   
-  @media only screen and (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 10px;
-    }
-  
-    .logo-brand {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .brand-name {
-      font-size: 1.2em;
-      margin-left: 0;
-    }
-  
-    .nav {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .nav-toggle {
-      display: block;
-    }
-  
-    .nav-links {
-      display: none; /* Hidden by default, shown when menu is toggled */
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .show {
-      display: flex; /* Shows the menu when toggled */
-    }
-  
-    .heroImage {
-      width: 100%; /* Adjust the image width */
-      max-width: 300px;
-      padding-top: 20px;
-    }
-  
-    .hero-title {
-      font-size: 2em;
-      text-align: center;
-    }
-  
-    .hero-description {
-      font-size: 1.2em;
-      text-align: center;
-    }
-  
-    .hero-button {
-      max-width: 120px;
-      padding: 10px 20px;
-    }
-  
-    .aboutme-info h1 {
-      font-size: 2em;
-    }
-  
-    .profile-picture {
-      width: 100px;
-    }
-  
-    .homeab-btm {
-      padding: 10px 20px;
-    }
-  
-    footer {
-      padding: 20px 0;
-    }
-  }
-  
+ /* Align the menu to the right on mobile */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+}
+
+.nav-links.active {
+    display: flex; 
+}
+
+.nav-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+}
