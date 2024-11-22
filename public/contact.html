@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Raccoon Press</title>
+  <link rel="icon" href="assets/raccoonPressLogo2.png" type="image/icon type" class="web-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <!--nav bar start-->
+  <header class="header">
+    <div class="container">
+      <a class="logo-brand" href="/">
+        <img src="assets/raccoonPressLogo2.png" alt="Raccoon Press Logo" class="logo">
+        <tt class="brand-name">Raccoon Press</tt>
+      </a>
+      <nav class="nav">
+        <div class="nav-links" id="nav-menu">
+          <a class="nav-link" href="index.html">Home Page</a>
+          <a class="nav-link" href="books.html">Books</a>
+          <a class="nav-link" href="aboutme.html">About Me</a>
+          <a class="nav-link" href="videos.html">Videos</a>
+          <a class="nav-link" href="authors.html">For Authors</a>
+          <a class="nav-link" href="contact.html">Contact Me</a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+          <span class="nav-icon"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <!--nav bar end-->
+
+  <!-- Main content section with background image -->
+  <div style="
+    background-image: url('https://raccoonpress.com/assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;">
+
+    <!-- Contact Form with Title and Intro Text -->
+    <form id="contactForm">
+      <img src="assets/envelope.png" alt="Picture of envelope" class="responsive-image" style="display: block; margin: 0 auto 10px; width: 100px; height: auto;">
+      <h1 class="hero-title" style="text-align: center; margin-bottom: 0px;">Contact me</h1>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.instagram.com/superfartypants/" target="_blank">
+            <img src="assets/icons/instagramIcon.png" alt="Instagram Icon" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/people/Raccoon-Press-Paul-Wennersberg-L%C3%B8vholen/61551660068901/" target="_blank">
+            <img src="assets/icons/facebookIcon.png" alt="Facebook Icon" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.goodreads.com/author/show/19615602.Paul_Wennersberg_L_vholen" target="_blank">
+            <img src="assets/icons/goodreader.png" alt="Goodreads Icon" class="icon">
+          </a>
+        </li>
+      </ul>
+
+      <p style="text-align: center; margin-bottom: 20px;">
+        Whether it's a press enquiry, questions, or you just want to say hi, you can either get in touch via social media or drop me an email below.
+      </p>
+
+      <!-- Form Fields -->
+      <label for="user_name">Your Name:</label>
+      <input type="text" id="user_name" name="user_name" placeholder="Write your name here..." required>
+      <br><br>
+
+      <label for="user_email">Your Email:</label>
+      <input type="email" id="user_email" name="user_email" placeholder="Write your email here..." required>
+      <br><br>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      <br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>Get in touch with me</h3>
+      <p>Whether it's press inquiries, feedback, author help, or you have any questions whatsoever, feel free to get in touch.</p>
+      <br>
+      <a href="contact.html" class="footer-button">Contact me</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; Raccoon Press | All Rights Reserved | Designed & coded by Aaron Lacerda | Website Content and Domain &copy; 2024 Raccoon Press
+    </div>
+  </footer>
+
+  <!-- Link to the contactForm.js file -->
+  <script src="contactForm.js"></script>
+</body>
+</html>

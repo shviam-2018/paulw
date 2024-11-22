@@ -1,0 +1,391 @@
+/* Basic Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fffff4;
+}
+
+/* Font Faces */
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JMHTypewriter';
+  src: url('fonts/JMH Typewriter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Header */
+.header {
+  background-color: #03b9f6;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  margin-left: 10px;
+  font-size: 1.5em;
+  font-family: 'JMHTypewriter';
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: 'JMHTypewriter';
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  color: #d5f500;
+}
+
+/* Responsive Navbar Toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 3em;
+  font-family: 'JMHTypewriter';
+  text-align: center;
+  color: black;
+  margin: 50px auto 20px;
+}
+
+/* Book List Section */
+.mybooks {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px 0;
+  flex-direction: row;
+}
+
+.book-image {
+  width: 220px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.book-details {
+  flex: 1;
+  max-width: 600px;
+}
+
+.button-container, .buy-links {
+  margin-top: 10px;
+}
+
+.bookbutton, .buy-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ed9a0a;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'JMHTypewriter';
+}
+
+.bookbutton:hover, .buy-links a:hover {
+  background-color: #d88808;
+}
+
+/* Contact Form */
+#contactForm {
+  background-color: #fffff4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+#contactForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#contactForm button[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content h3,
+.footer-content p,
+.footer-button,
+.footer-bottom {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.footer-button {
+  background-color: #03b9f6;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-button:hover {
+  background-color: white;
+  color: #03b9f6;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+/* Responsive Image and Text Styling */
+@media screen and (max-width: 768px) {
+  .mybooks, .book-list, .book-item, #contactForm {
+    padding: 0 20px;
+  }
+
+  .mybooks {
+    flex-direction: column;
+  }
+
+  .book-image {
+    margin: 0 auto 10px;
+  }
+
+  .book-image, .book-item img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.image-item {
+  flex-basis: calc(50% - 15px);
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-image {
+  height: 220px;
+  width: auto;
+  border-radius: 5px;
+}
+
+/* Video Page Styling */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.video-item {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 30px;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 600px) {
+  .responsive-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.video-item {
+  margin-bottom: 30px;
+  width: 560px;
+}
+
+.responsive-video {
+  width: 100%;
+  height: 315px;
+}
+
+@media screen and (max-width: 600px) {
+  .video-item {
+    width: 100%;
+  }
+
+  .responsive-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.icon {
+  height: 50px;
+  width: auto;
+}
+
+/* Responsive Images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 769px) {
+  .responsive-image {
+    max-width: 600px;
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+}

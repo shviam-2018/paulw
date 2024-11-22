@@ -1,0 +1,234 @@
+/* Basic reset and body */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, 'JMHTypewriter', Arial;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffff4;
+}
+
+/* Header and nav styling */
+.header {
+  background-color: #03b9f6;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.web-icon {
+  border-radius: 20%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  margin-left: 10px;
+  font-size: 1.5em;
+  font-family: 'JMHTypewriter';
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: 'JMHTypewriter';
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  color: #d5f500;
+}
+
+/* Book section styling */
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.book-image {
+  width: 150px;
+  height: auto;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-details h3 {
+  margin-top: 0;
+}
+
+.buy-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.buy-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero styling */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-family: 'JMHTypewriter';
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  color: #000000;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer-button {
+  background-color: #03b9f6;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffff;
+  font-family: 'JMHTypewriter';
+}
+
+.footer-button:hover {
+  background-color: white;
+  color: #03b9f6;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+/* Contact form styling */
+#contactForm {
+  background-color: #ed9a0a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 80%;
+  max-width: 600px;
+  margin-top: 30px;
+  text-align: left;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#contactForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#contactForm button[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .booksbooks {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
