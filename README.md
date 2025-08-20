@@ -62,24 +62,6 @@ root
 
 ---
 
-## Setup and Installation
-
-To run the website locally:
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
-    ```
-
-2. **Open in your browser**:
-    Simply open any `.html` file (e.g., `index.html`) in a modern browser (Chrome, Firefox, etc.).
-
-3. **Live Server (optional)**:
-    If you're using VSCode, you can use the "Live Server" extension for live reloading.
-
----
-
 ## Features
 
 - **Responsive Design**: The website is mobile-friendly, with a responsive navigation bar (hamburger menu on smaller screens).
